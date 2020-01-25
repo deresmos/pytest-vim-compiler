@@ -24,13 +24,12 @@ CompilerSet errorformat=
       \ERROR:\ %m,
       \%E_%\\+\ %m\ _%\\+,
       \%Cfile\ %f\\,\ line\ %l,
-      \%CE\ %#%m,
+      \%ZE\ %#%m,
       \%EE\ \ \ \ \ File\ \"%f\"\\,\ line\ %l,
-      \%ZE\ \ \ %[%^\ ]%\\@=%m,
-      \%Z%f:%l:\ %m,
-      \%Z%f:%l,
+      \%C%f:%l:\ in\ %.%#,
       \%C%.%#,
       \%-G%.%#\ seconds,
+      \%-G%.%#[%.%#%%],
       \%-G%.%#,
 
 let &cpo = s:cpo_save
